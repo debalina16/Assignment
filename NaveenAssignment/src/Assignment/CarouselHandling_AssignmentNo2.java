@@ -32,6 +32,7 @@ public class CarouselHandling_AssignmentNo2 {
 	  ((JavascriptExecutor) driver).
 	        executeScript("window.scrollBy(0,2000)");
 	  Thread.sleep(5000);
+	  //get label names
 	  List<WebElement> labels=driver.findElements(By.xpath("//*[@class='sc-gsTCUz bhdLno']/h3"));
 	  System.out.println("Labels count is "+labels.size());
 	  for(WebElement label:labels) {
@@ -69,7 +70,9 @@ public class CarouselHandling_AssignmentNo2 {
 			productList.add(product.getAttribute("innerText"));
 		}
 		System.out.println("Total Product count is "+productList.size());
+		//sort all product
 		Collections.sort(productList);
+		//print all sorted product 
 		System.out.println("Print List after sorting of " + label + " label is ");
 		for (String product : productList) {
 			System.out.println(product);
