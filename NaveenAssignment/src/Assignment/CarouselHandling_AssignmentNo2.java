@@ -23,7 +23,7 @@ public class CarouselHandling_AssignmentNo2 {
 		for(String label:labelList) {
 			scrollCarouselAndSortData(label); 
 		  }
-	   System.out.println("\t Testcase Successfully");
+	   System.out.println("\t Testcase is Executed Successfully ");
        driver.quit();
 	}
 	
